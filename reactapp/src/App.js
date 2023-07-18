@@ -1,24 +1,47 @@
-import logo from './logo.svg';
 import './App.css';
-
+import Login from './components/login1';
+import Pass from './components/Select';
+import {BrowserRouter as Router, Route,Routes}from 'react-router-dom';
+import Signup from './components/Signup';
+import About from './components/About';
+import Course from './components/Course';
+import EnrollmentForm from './components/enroll';
+import NavSide from './components/NavSide';
+import Topbar from './components/Topbar';
+import Work from './components/work';                                                                                                                                                                 
+import Learn from './components/Asment';
+import Profile from './components/profile';
+import Contact from './components/contact';
+import { Provider } from 'react-redux';
+import store from './components/store';
+import Complete from './components/complete';
 function App() {
   return (
+    <Provider store={store}>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  
+    {/* <NavSide/> */}
+   <Router>
+
+      <Routes>
+      <Route path="/Topbar" element={<Topbar/>}/>
+        <Route path="/" element={<Login/>}/>
+        <Route path="/Signup" element={<Signup/>}/>
+        <Route path="/Pass" element={<Pass/>}/>
+        <Route path='/NavSide' element={<NavSide/>}/>
+        <Route path='/About' element={<About/>}/>
+        <Route path="/Course" element={<Course/>}/>
+        <Route path="/EnrollmentForm" element={<EnrollmentForm/>}/>
+        <Route path="/work" element={<Work/>}/>
+        <Route path="/Learn" element={<Learn/>}/>
+        <Route path="/Profile" element={<Profile/>}/>
+        <Route path="/Contact" element={<Contact/>}/>
+        <Route path="/Complete" element={<Complete/>}/>
+        <Route path="/store"element={<store/>}/>
+      </Routes>
+    </Router> 
     </div>
+    </Provider>
   );
 }
 

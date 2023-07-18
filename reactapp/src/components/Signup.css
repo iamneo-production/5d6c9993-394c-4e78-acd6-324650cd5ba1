@@ -1,0 +1,64 @@
+.body1
+{
+  padding: 150px;
+    background-image:url("https://res.cloudinary.com/dv3xtovhk/image/upload/v1688969665/img1_ftikqb.jpg");
+    height:745px;
+    background-size: cover;
+}
+.name1{
+  margin-top:50px;
+  font-style:bold;
+  font-size:medium;
+}
+.name2{
+margin-top:50px;
+font-style:bold;
+}
+.name3
+{
+margin-top:100px;
+font-style:bold;
+}
+
+
+.class1{
+    margin-left:250px;
+    
+    border-radius: 25px;
+    
+  }
+.form1
+{
+  width: 350px;
+height:450px;
+margin: 0 auto;
+padding: 50px;
+background-color:bisque;
+border-radius: 5px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.form1 input[type='text'],
+.form1 input[type='email'],
+  .form1 input[type='password'] {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px ;
+    padding: 5px;
+    font-size: 16px;
+  }
+  
+  .form1 button[type='submit'] {
+    width: 100%;
+    padding: 10px;
+    background-color: gray;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .form1 button[type='submit']:hover {
+    background-color:cadetblue;
+  }
+  
